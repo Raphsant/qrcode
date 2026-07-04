@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow:
+
+Sitemap: https://qr.snuuy.com/sitemap.xml

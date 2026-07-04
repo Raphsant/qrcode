@@ -1,0 +1,12 @@
+# Dockge stack for Snuuy QRMaker
+# Replace YOUR_GITHUB_USERNAME/qrcode with the actual GitHub repo path
+# (the image name matches the repo: ghcr.io/<owner>/<repo>).
+services:
+  qrmaker:
+    image: ghcr.io/YOUR_GITHUB_USERNAME/qrcode:latest
+    container_name: qrmaker
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NUXT_PUBLIC_SITE_URL=https://qr.snuuy.com
