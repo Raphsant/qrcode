@@ -9,6 +9,18 @@
       </NuxtLink>
       <div class="flex items-center gap-1">
         <slot name="actions" />
+        <UButton
+          :to="TIP_URL"
+          target="_blank"
+          rel="noopener"
+          icon="i-lucide-coffee"
+          color="neutral"
+          variant="ghost"
+          size="sm"
+          class="ms-0.5 text-muted"
+          aria-label="Tip jar"
+          title="Tip jar"
+        />
       </div>
     </div>
   </header>
